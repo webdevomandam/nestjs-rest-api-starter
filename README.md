@@ -4,8 +4,8 @@
 - ✔️ Express (Default)
 - ✔️ TypeORM
 - ✔️ MySQL
+- :heavy_check_mark: Swagger Documentation
 - 🚧 Authentication (WIP)
-- 🚧 Swagger Documentation (WIP)
 - 🚧 E2E Testing (WIP)
 - 🚧 Data Pagination (WIP)
 - 🚧 Compodoc (WIP)

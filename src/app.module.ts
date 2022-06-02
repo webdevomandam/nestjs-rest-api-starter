@@ -7,14 +7,16 @@ import { UsersModule } from './resources/users/users.module';
 
 @Module({
   imports: [
+    //Enable to load environmental variables inside the .env file
     ConfigModule.forRoot(),
+    //Database connection
     TypeOrmModule.forRoot({
       type: 'mysql',
-      host: process.env.APP_HOST,
-      port: +process.env.APP_ORT,
-      username: process.env.APP_USERNAME,
-      password: process.env.APP_PASSWORD,
-      database: process.env.APP_DATABASE,
+      host: process.env.YOUR_DB_HOST,
+      port: +process.env.YOUR_DB_PORT,
+      username: process.env.YOUR_DB_USERNAME,
+      password: process.env.YOUR_DB_PASSWORD,
+      database: process.env.YOUR_DB_NAME,
       entities: ['dist/**/**.entity{.ts,.js}'],
       autoLoadEntities: true,
     }),
